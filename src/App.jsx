@@ -15,7 +15,7 @@ function App() {
   const fetchAllProducts = async() => {
        const products2 = await getAllProducts();
        setProducts([...products2])
-      //  console.log(products2);
+       console.log(products2);
   }
 
   return (
@@ -24,7 +24,11 @@ function App() {
       <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap -m-4">
-      <Card />
+      {/* {
+        products2.map((data)=> {
+          return <Card key={data.id} /> 
+        })
+      } */}
     </div>
   </div>
 </section>
